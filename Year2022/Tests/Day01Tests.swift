@@ -1,0 +1,56 @@
+import Advent
+import XCTest
+import Year2022
+
+final class Day01Tests: XCTestCase {
+
+  func testPart1Examples() throws {
+    XCTAssertEqual(
+      try Day01.part1([
+        "1000",
+        "2000",
+        "3000",
+        "",
+        "4000",
+        "",
+        "5000",
+        "6000",
+        "",
+        "7000",
+        "8000",
+        "9000",
+        "",
+        "10000",
+      ]), 24000)
+  }
+
+  func testPart1Puzzle() throws {
+    let input = try Bundle.module.input(named: "Day01")
+    XCTAssertEqual(try Day01.part1(input), 67016)
+  }
+
+  func testPart2Examples() throws {
+    XCTAssertEqual(
+      try Day01.part2([
+        "1000",
+        "2000",
+        "3000",
+        "",
+        "4000",
+        "",
+        "5000",
+        "6000",
+        "",
+        "7000",
+        "8000",
+        "9000",
+        "",
+        "10000",
+      ]), 45000)
+  }
+
+  func testPart2Puzzle() throws {
+    let input = try Bundle.module.input(named: "Day01")
+    XCTAssertEqual(try Day01.part2(input), 200116)
+  }
+}
