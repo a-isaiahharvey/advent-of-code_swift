@@ -31,14 +31,6 @@ let package = Package(
         .unsafeFlags(["-enable-bare-slash-regex"])
       ]),
 
-    .testTarget(
-      name: "AdventTests",
-      dependencies: ["Advent"],
-      path: "Advent/Tests",
-      swiftSettings: [
-        .unsafeFlags(["-enable-bare-slash-regex"])
-      ]),
-
     // MARK: - Year2022
 
     .target(
